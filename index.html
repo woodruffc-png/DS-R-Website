@@ -3,11 +3,143 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page Title</title>
+  <title>Diller Scofidio + Renfro</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" language="javascript"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-
+  <header class="hero" id="home">
+    <img class="hero__image" src="images/home-hero.png" alt="">
+    <div class="hero__scrim"></div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="site-nav__logo" href="#home" aria-label="Diller Scofidio + Renfro home">
+        <img src="images/dsr-logo.png" alt="">
+      </a>
+      <div class="site-nav__links">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="studio.html">Studio</a>
+        <a href="meet-us.html">Meet Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="#news">News</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <header class="projects__header">
+        <h1 class="projects__title" id="projects-title">Our Projects</h1>
+        <p class="projects__subtitle">A showcase of remarkable architecture...</p>
+      </header>
+      <div class="projects__grid">
+        <article class="project-card" data-node-id="52:341">
+          <div class="project-card__image">
+            <img class="project-card__photo project-card__photo--highline" src="images/project-highline.jpg" alt="The NYC Highline elevated park">
+          </div>
+          <div class="project-card__caption">
+            <h2>NYC Highline</h2>
+            <img class="project-card__arrow" src="images/project-arrow.svg" alt="" aria-hidden="true">
+          </div>
+        </article>
+        <article class="project-card" data-node-id="52:345">
+          <div class="project-card__image">
+            <img class="project-card__photo project-card__photo--bridge" src="images/project-park-union-bridge.jpg" alt="Park Union Bridge">
+          </div>
+          <div class="project-card__caption">
+            <h2>Park Union Bridge</h2>
+            <img class="project-card__arrow" src="images/project-arrow.svg" alt="" aria-hidden="true">
+          </div>
+        </article>
+        <article class="project-card" data-node-id="52:343">
+          <div class="project-card__image">
+            <img class="project-card__photo" src="images/project-school-of-american-ballet.jpg" alt="School of American Ballet">
+          </div>
+          <div class="project-card__caption">
+            <h2>School of American Ballet</h2>
+            <img class="project-card__arrow" src="images/project-arrow.svg" alt="" aria-hidden="true">
+          </div>
+        </article>
+        <article class="project-card" data-node-id="52:344">
+          <div class="project-card__image">
+            <img class="project-card__photo" src="images/project-vagelos-education-center.jpg" alt="Vagelos Education Center">
+          </div>
+          <div class="project-card__caption">
+            <h2>Vagelos Education Center</h2>
+            <img class="project-card__arrow" src="images/project-arrow.svg" alt="" aria-hidden="true">
+          </div>
+        </article>
+        <article class="project-card" data-node-id="52:342">
+          <div class="project-card__image">
+            <img class="project-card__photo project-card__photo--park" src="images/project-zaryadye-park.jpg" alt="Zaryadye Park">
+          </div>
+          <div class="project-card__caption">
+            <h2>Zaryadye Park</h2>
+            <img class="project-card__arrow" src="images/project-arrow.svg" alt="" aria-hidden="true">
+          </div>
+        </article>
+        <article class="project-card" data-node-id="52:346">
+          <div class="project-card__image">
+            <img class="project-card__photo project-card__photo--warehouse" src="images/project-mit-metropolitan-warehouse.jpg" alt="MIT Metropolitan Warehouse">
+          </div>
+          <div class="project-card__caption">
+            <h2>MIT Metropolitan Warehouse</h2>
+            <img class="project-card__arrow" src="images/project-arrow.svg" alt="" aria-hidden="true">
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="section-divider" aria-hidden="true"></div>
+    <section class="news" id="news" aria-labelledby="news-title">
+      <header class="news__header">
+        <h2 class="news__title" id="news-title">The Latest News</h2>
+        <p class="news__subtitle">Keep up with important articles to get valuable insights and up to date topics</p>
+      </header>
+      <div class="news__grid">
+        <article class="news-card" data-node-id="105:40">
+          <img class="news-card__image news-card__image--architectural-record" src="images/news-architectural-record.jpg" alt="">
+          <div class="news-card__gradient"></div>
+          <a class="news-card__link" href="https://www.architecturalrecord.com/articles/18449-a-warehouse-is-converted-into-the-new-home-for-architecture-at-mit" target="_blank" rel="noopener noreferrer">
+            <span>Architectural Record</span>
+            <time datetime="2026-09-30">09/30/2026</time>
+          </a>
+        </article>
+        <article class="news-card" data-node-id="105:41">
+          <img class="news-card__image news-card__image--pin-up" src="images/news-pin-up.png" alt="">
+          <div class="news-card__gradient"></div>
+          <a class="news-card__link" href="https://www.pinupmagazine.org/articles/pinup-40-40-houses" target="_blank" rel="noopener noreferrer">
+            <span>Pin-Up</span>
+            <time datetime="2026-04-30">04/30/2026</time>
+          </a>
+        </article>
+        <article class="news-card" data-node-id="105:42">
+          <img class="news-card__image news-card__image--financial-times" src="images/news-financial-times.png" alt="">
+          <div class="news-card__gradient"></div>
+          <a class="news-card__link" href="https://www.ft.com/content/ffb81b29-242d-4c5a-9e0c-ac56eebd8342?syn-25a6b1a6=1" target="_blank" rel="noopener noreferrer">
+            <span>Financial Times</span>
+            <time datetime="2025-04-24">04/24/2025</time>
+          </a>
+        </article>
+        <article class="news-card" data-node-id="105:43">
+          <img class="news-card__image news-card__image--new-york-times" src="images/news-new-york-times.png" alt="">
+          <div class="news-card__gradient"></div>
+          <a class="news-card__link" href="https://www.nytimes.com/2025/03/22/opinion/high-line-park-ricardo-scofido.html" target="_blank" rel="noopener noreferrer">
+            <span>The New York Times</span>
+            <time datetime="2025-03-22">03/22/2025</time>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <div class="social-footer home-social-footer" role="group" aria-label="Social media">
+    <img src="images/home-social-facebook.png" alt="Facebook">
+    <img src="images/home-social-instagram.png" alt="Instagram">
+    <span class="social-footer__tiktok">
+      <img src="images/home-social-tiktok.png" alt="TikTok">
+    </span>
+    <img src="images/home-social-pinterest.png" alt="Pinterest">
+    <img src="images/home-social-youtube.png" alt="YouTube">
+  </div>
 </body>
 </html>
